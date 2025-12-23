@@ -16,7 +16,7 @@ export async function login(
     const newErrors = {
         email: trimmedEmail ? "" : "ایمیل رو وارد کن",
         password: trimPassword === "" ? "پسورد رو وارد کن"
-            : trimPassword.length > 6 ? "پسورد بالای 6 رقمه"
+            : trimPassword.length < 6 ? "پسورد بالای 6 رقمه"
                 : "",
     }
 

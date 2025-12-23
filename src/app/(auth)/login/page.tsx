@@ -17,10 +17,9 @@ import useAlertModal from "@/hooks/useAlertModal";
 import {LoginFormDataTypes} from "@/types/auth";
 import Input from "@/components/forms/Input";
 import {emailRegex} from "@/lib/auth-utils";
+import {useRouter} from "next/navigation";
 import useToggle from "@/hooks/useToggle";
-import {redirect} from "next/navigation";
 import {login} from "@/actions/login";
-import Image from "next/image";
 
 const initValue: LoginFormDataTypes = {
     success: false,
@@ -57,6 +56,8 @@ export default function Login() {
 
     // ref
     const inputRef = useRef<HTMLInputElement>(null);
+
+    const router = useRouter();
 
     // set title
     useSetClientTitle("صفحه لاگین");
@@ -108,10 +109,21 @@ export default function Login() {
                 password: ""
             });
         }
+
+        if (
+            val.trim().length > 6
+            && errors.password.includes("6")
+        ) {
+            setErrors({
+                ...errors,
+                password: ""
+            });
+        }
     }
 
     function submitHandler(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
+
 
         const trimmedEmail: string = email?.trim()?.toLowerCase();
         const trimPassword: string = password?.trim();
@@ -143,7 +155,9 @@ export default function Login() {
                     isOpen: true,
                 });
 
-                setTimeout(() => redirect("/"), 4000);
+                setTimeout(() => {
+                    router.replace("/");
+                }, 4000);
             } else {
                 if (state.emailError || state.passwordError) {
                     setErrors({
@@ -159,17 +173,6 @@ export default function Login() {
     return (
         <>
             <AlertModalComponent/>
-
-            {/* logo */}
-            <Image
-                loading={"eager"}
-                alt="logo"
-                height={240}
-                width={240}
-                id={"login-logo"}
-                src={"/images/shared/logo.webp"}
-                className={"max-w-10 top-2 left-2 absolute xs:top-5 xs:left-5 xs:max-w-20"}
-            />
 
             <section
                 className="flex items-center justify-center min-h-screen"
@@ -203,7 +206,7 @@ export default function Login() {
                             inputRef={inputRef}
                             autoComplete={"email"}
                             hasError={
-                                errors.email || state.emailError
+                                errors.email
                             }
                             placeholder={"you@example.com"}
                             onChangeInput={setEmailHandler}
@@ -223,7 +226,7 @@ export default function Login() {
                             }
                             dir={"ltr"}
                             hasError={
-                                errors.password || state.passwordError
+                                errors.password
                             }
                             onChangeInput={setPasswordHandler}
                         >

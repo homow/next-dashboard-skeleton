@@ -41,7 +41,7 @@ export default function CheckBox(
                 ref={ref}
                 id={id}
                 type="checkbox"
-                className="w-4 h-4 rounded border-2 border-gray-400 appearance-none checked:bg-violet-500 checked:border-violet-600 cursor-pointer"
+                className="w-4 h-4 rounded border-2 border-gray-400 appearance-none checked:bg-sky-500 checked:border-sky-600 cursor-pointer"
             />
             <span>{label}</span>
         </label>
