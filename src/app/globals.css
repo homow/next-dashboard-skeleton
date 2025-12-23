@@ -15,7 +15,6 @@
     --breakpoint-3xl: 105rem;
 
     /* fonts */
-    --font-dana: "dana", "Helvetica Neue", Helvetica, Arial, sans-serif, monospace;
     --font-geist: "geist", "Helvetica Neue", Helvetica, Arial, sans-serif, monospace;
 
     /* colors */
@@ -88,7 +87,7 @@
     }
 
     body {
-        @apply font-dana font-normal leading-[150%] text-base bg-primary-bg text-primary-txt tracking-wider selection:bg-violet-700 selection:text-white;
+        @apply font-geist font-normal leading-[150%] text-base bg-primary-bg text-primary-txt tracking-wider selection:bg-violet-700 selection:text-white;
     }
 
     h1, h2, h3 {

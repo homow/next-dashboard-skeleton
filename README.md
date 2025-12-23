@@ -1,180 +1,181 @@
-### 🌐 README Versions
+### 🌐 نسخه‌های README
 
-- 🇺🇸 [English Version](./README.md)
-- 🇮🇷 [نسخه فارسی](./README.FA.md)
-
----
-
-### 🌐 Project Versions
-
-- 🇺🇸 [LTR Version](https://github.com/homow/next-dashboard-skeleton)
-- 🇮🇷 [RTL / نسخه فارسی راست‌چین](https://github.com/homow/next-dashboard-skeleton/tree/rtl)
+* 🇺🇸 [English Version](README.EN.md)
+* 🇮🇷 [نسخه فارسی](README.md)
 
 ---
 
-# 🧩 Dashboard Template
+### 🌐 نسخه‌های پروژه
 
-A clean, minimal, Type-Safely fast **Next Dashboard Template** built with the latest modern stack.  
-Responsive sidebar for both mobile and desktop, plus built-in **Dark/Light mode** support.
-
----
-
-## ⚙️ Tech Stack
-
-| Technology      | Version | Short Description |
-|-----------------|---------|-------------------|
-| ⚛️ React        | 19      | UI library        |
-| ⚡ Next.js       | 16      | React framework   |
-| 🧹 ESLint       | 9       | Code linting      |
-| 🎨 Tailwind CSS | 4       | Utility-first CSS |
-| 🐻 Zustand      | 5       | State management  |
-| 🛡️ TypeScript  | 5       | Typed JavaScript  |
+* 🇺🇸 [LTR Version](https://github.com/homow/next-dashboard-skeleton)
+* 🇮🇷 [RTL / نسخه فارسی راست‌چین](https://github.com/homow/next-dashboard-skeleton/tree/rtl)
 
 ---
 
-## 🚀 Features
+# 🧩 قالب داشبورد (Dashboard Template)
 
-- 📱 Responsive sidebar (mobile & desktop)
-- 🌗 Dark / Light theme toggle
-- 🧠 Clean structure for scalable dashboards
-- 🧩 Ready to extend with routes and components
-- 🛡️ Fully Type-safe (TypeScript)
+یک قالب داشبورد **تمیز، مینیمال و سریع** بر پایه **Next.js 16**
+مناسب برای ساخت پنل‌های مدیریت مقیاس‌پذیر، با سایدبار واکنش‌گرا برای موبایل و دسکتاپ
+و پشتیبانی کامل از **حالت تاریک / روشن** 🌗
 
 ---
 
-### 🔗 Preview
+## ⚙️ تکنولوژی‌ها
 
-> 🚀 **Live Demo:** [**Dashboard Skeleton (GitHub Pages)**](https://homow.github.io/next-dashboard-skeleton)  
-> Explore the live preview of the dashboard structure, including responsive menu and dark/light themes.
+| تکنولوژی        | نسخه | توضیح کوتاه          |
+|-----------------|------|----------------------|
+| ⚛️ React        | 19   | کتابخانه رابط کاربری |
+| ⚡ Next.js       | 16   | فریم‌ورک React       |
+| 🧹 ESLint       | 9    | بررسی کیفیت کد       |
+| 🎨 Tailwind CSS | 4    | CSS مبتنی بر utility |
+| 🐻 Zustand      | 5    | مدیریت state         |
+| 🛡️ TypeScript  | 5    | جاوااسکریپت تایپ‌سیف |
 
 ---
 
-## 🧭 Get Started
+## 🚀 ویژگی‌ها
+
+* 📱 سایدبار واکنش‌گرا (موبایل و دسکتاپ)
+* 🌗 پشتیبانی از حالت تاریک / روشن
+* 🧠 ساختار تمیز و مقیاس‌پذیر
+* 🧩 آماده توسعه با Route و Component
+* 🛡️ کاملاً Type-safe با TypeScript
+
+---
+
+### 🔗 پیش‌نمایش
+
+> 🚀 **دموی زنده:** [**Next Dashboard Skeleton**](https://homow.github.io/next-dashboard-skeleton)
+> مشاهده ساختار داشبورد، سایدبار واکنش‌گرا و تم تاریک / روشن.
+
+---
+
+## 🧭 شروع سریع
 
 ```bash
-# Clone this repository
+# کلون پروژه
 git clone https://github.com/homow/next-dashboard-skeleton.git
 
-# Navigate
+# ورود به پوشه پروژه
 cd next-dashboard-skeleton
 
-# Install dependencies
+# نصب وابستگی‌ها
 npm install
 
-# Run development server
+# اجرای پروژه
 npm run dev
 ```
 
-📁 Project Structure & Usage
+---
+
+## 📁 ساختار پروژه
 
 ```markdown
 next-dashboard-skeleton/
-├── public/                     # Static files (fonts, images, etc.)
+├── public/                 # فایل‌های استاتیک (فونت، تصویر و ...)
 ├── src/
-│   ├── actions/                # Server Actions (Next.js App Router)
-│   ├── app/                    # App Router root
-│   │   ├── (auth)/             # Auth routes group (login, register, etc.)
-│   │   ├── (main)/             # Main app routes group and layout
-│   │   ├── globals.css         # Global styles (Tailwind)
-│   │   ├── layout.tsx          # Root layout
-│   │   └── not-found.tsx       # 404 page
-│   │
-│   ├── assets/                 # Fonts and static assets
-│   │
-│   ├── components/             # Reusable components
-│   │   ├── button/             # Button components
-│   │   ├── forms/              # Form-related components
-│   │   ├── icon/               # Icon component
-│   │   ├── layout/             # Layout components (Sidebar, Header, etc.)
-│   │   ├── modals/             # Modal components
-│   │   └── ui/                 # Base UI components (inputs, cards, etc.)
-│   │
-│   ├── hooks/                  # Custom React hooks
-│   ├── lib/                    # Utilities and helpers
-│   ├── store/                  # Zustand stores
-│   └── types/                  # Global TypeScript types
+│ ├── actions/              # Server Actions (App Router)
+│ ├── app/                  # ریشه App Router
+│ │ ├── (auth)/             # گروه مسیرهای احراز هویت
+│ │ ├── (main)/             # مسیرهای اصلی داشبورد
+│ │ ├── globals.css         # استایل‌های سراسری
+│ │ ├── layout.tsx          # لایه ریشه
+│ │ └── not-found.tsx       # صفحه 404
+│ │
+│ ├── assets/               # فونت‌ها و فایل‌های استاتیک
+│ ├── components/           # کامپوننت‌های قابل استفاده مجدد
+│ │ ├── button/
+│ │ ├── forms/
+│ │ ├── icon/               # کامپوننت آیکون
+│ │ ├── layout/             # سایدبار، هدر و ...
+│ │ ├── modals/
+│ │ └── ui/
+│ │
+│ ├── hooks/                # هوک‌های سفارشی
+│ ├── lib/                  # توابع و ابزارهای کمکی
+│ ├── store/                # Zustand stores
+│ └── types/                # تایپ‌های سراسری
 │
-├── .gitignore
-├── eslint.config.mjs            # ESLint configuration
-├── next.config.ts               # Next.js configuration
-├── next-env.d.ts
-├── package.json
+├── eslint.config.mjs
+├── next.config.ts
 ├── postcss.config.mjs
-└── tsconfig.json                # Path aliases & TS config
+└── tsconfig.json
 ```
-
-## ⚙️ Project Overview
-
-This project is built with **Next.js 16 App Router** and follows a **scalable, feature-based architecture**.
-
-Everything is already set up —
-you only need to add your routes and start building.
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ توضیح کلی پروژه
 
-### 1️⃣ Create your pages
+این پروژه با **Next.js 16 (App Router)** ساخته شده
+و از یک معماری **تمیز و مقیاس‌پذیر** پیروی می‌کند.
 
-Add routes inside the App Router:
+همه‌چیز از قبل آماده است —
+فقط کافی است route و featureهای خودت را اضافه کنی.
+
+---
+
+## 🚀 نحوه توسعه
+
+### 1️⃣ ایجاد صفحات
+
+مسیرها داخل App Router تعریف می‌شوند:
 
 ```
 src/app/(main)/
 src/app/(auth)/
 ```
 
-Each folder represents a route segment.
+هر پوشه نماینده یک segment از route است.
 
 ---
 
-### 2️⃣ Layout system
+### 2️⃣ سیستم Layout
 
-Layouts are handled via:
+لایه‌ها از طریق مسیرهای زیر مدیریت می‌شوند:
 
 ```
 src/app/layout.tsx
 src/components/layout/
 ```
 
-Use route groups `(auth)` and `(main)` to separate layouts cleanly.
+با استفاده از `(auth)` و `(main)` می‌توان layoutها را جدا کرد.
 
 ---
 
-### 3️⃣ State management
+### 3️⃣ مدیریت State
 
-Global state lives in:
+State سراسری پروژه در مسیر زیر قرار دارد:
 
 ```
 src/store/
 ```
 
-Powered by **Zustand**.
+با استفاده از **Zustand**.
 
 ---
 
-### 4️⃣ Reusable components
+### 4️⃣ کامپوننت‌های قابل استفاده مجدد
 
-All shared components are located in:
+تمام کامپوننت‌های عمومی در مسیر زیر هستند:
 
 ```
 src/components/
 ```
 
-Structured by responsibility (ui, forms, modals, layout, etc.)
+دسته‌بندی شده بر اساس مسئولیت (ui، forms، layout، modals و ...)
 
 ---
 
-## 🔗 Icon System
+## 🔗 سیستم آیکون‌ها
 
-Icons are rendered using **SVG `<use>`** with `<symbol>` definitions.
-
-All SVG symbols are defined once and reused across the app.
+آیکون‌ها با استفاده از **SVG `<use>`** و `<symbol>` رندر می‌شوند.
+تمام آیکون‌ها فقط یک‌بار تعریف شده و در کل پروژه قابل استفاده هستند.
 
 ---
 
-### 📍 Icon Definitions
+### 📍 تعریف آیکون‌ها
 
-All icons are defined in:
+همه آیکون‌ها در فایل زیر تعریف شده‌اند:
 
 ```
 src/components/ui/SvgDefs.tsx
@@ -182,20 +183,20 @@ src/components/ui/SvgDefs.tsx
 
 ---
 
-### 🧩 Icon Component
+### 🧩 کامپوننت Icon
 
-Instead of manually using `<svg>` everywhere, use the `Icon` component.
+به‌جای استفاده مستقیم از `<svg>`، از کامپوننت `Icon` استفاده کنید.
 
-You only pass the **icon name (id)** —
-❗ **without** the `-icon` suffix.
+فقط کافی است **نام آیکون (id)** را ارسال کنید
+❗ بدون `-icon`
 
-#### Example usage:
+#### مثال:
 
 ```tsx
-<Icon icon="home" />
+<Icon icon="home"/>
 ```
 
-This automatically resolves to:
+این به‌صورت خودکار به این تبدیل می‌شود:
 
 ```html
 #home-icon
@@ -203,29 +204,31 @@ This automatically resolves to:
 
 ---
 
-## ✨ Built-in Features
+## ✨ قابلیت‌های آماده
 
-* Dark / Light mode 🌗
-* Responsive layout 📱
-* Sidebar + layout structure 🧱
-* SVG icon system ⚡
-* Ready for Server Actions & App Router 🚀
-
----
-
-### 💡 Author
-
-> 👨‍💻 Made by [**homow**](https://github.com/homow)  
-> Crafted with ❤️ for developers who love clean & minimal UI.
-
-### 🌐 README Versions
-
-- 🇺🇸 [English Version](./README.md)
-- 🇮🇷 [نسخه فارسی](./README.FA.md)
+* 🌗 حالت تاریک / روشن
+* 📱 طراحی واکنش‌گرا
+* 🧱 ساختار آماده داشبورد
+* ⚡ سیستم آیکون SVG
+* 🚀 آماده برای Server Actions و App Router
 
 ---
 
-### 🌐 Project Versions
+### 💡 توسعه‌دهنده
 
-- 🇺🇸 [LTR Version](https://github.com/homow/next-dashboard-skeleton)
-- 🇮🇷 [RTL / نسخه فارسی راست‌چین](https://github.com/homow/next-dashboard-skeleton/tree/rtl)
+> 👨‍💻 ساخته شده توسط [**homow**](https://github.com/homow)
+> با ❤️ برای توسعه‌دهندگانی که عاشق کد تمیز و UI مینیمال هستند
+
+---
+
+### 🌐 نسخه‌های README
+
+* 🇺🇸 [English Version](README.EN.md)
+* 🇮🇷 [نسخه فارسی](README.md)
+
+---
+
+### 🌐 نسخه‌های پروژه
+
+* 🇺🇸 [LTR Version](https://github.com/homow/next-dashboard-skeleton)
+* 🇮🇷 [RTL / نسخه فارسی راست‌چین](https://github.com/homow/next-dashboard-skeleton/tree/rtl)

@@ -1,6 +1,6 @@
 import CustomThemeProvider from "@/components/ui/CustomThemeProvider";
 import {MainComponentProps} from "@/types/ui";
-import {dana, geist} from "@/lib/fonts";
+import {geist} from "@/lib/fonts";
 import "./globals.css";
 import SvgDefs from "@/components/icon/SvgDefs";
 
@@ -14,7 +14,7 @@ export default function RootLayout(
             data-scroll-behavior="smooth"
             lang="fa"
             dir="rtl"
-            className={`${dana.variable} ${geist.variable}`}
+            className={`${geist.variable}`}
             suppressHydrationWarning
         >
         <head>
