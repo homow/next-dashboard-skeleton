@@ -16,8 +16,17 @@ export default function DropDownAccountMenu(
 
     // drop down options
     const dropDownAccountOptionsData: DropDownOptionsType[] = [
-        {icon: "user", url: "/account", name: "اکانت"},
-        {icon: "logout", name: "خروج", callback: openLogoutModal},
+        {
+            icon: "user",
+            url: "/account",
+            name: "اکانت"
+        },
+        {
+            icon: "logout",
+            name: "خروج",
+            callback: openLogoutModal,
+            ulClassName: "hover:bg-rose-600 active:bg-rose-600",
+        },
     ];
 
     return (
@@ -37,8 +46,7 @@ export default function DropDownAccountMenu(
 
                 <ul
                     className={cn(
-                        "divide-y divide-disable-txt/30 pt-2 *:last:hover:bg-rose-600 *:last:active:bg-rose-600",
-                        className
+                        "divide-y divide-disable-txt/30 pt-2"
                     )}
                 >
                     {dropDownAccountOptionsData.length > 0 &&
@@ -49,6 +57,7 @@ export default function DropDownAccountMenu(
                                     dataLink={data}
                                     className={"pt-2"}
                                     setOpenMenu={setOpen}
+                                    ulClassName={data.ulClassName}
                                 />
                             )
                         )

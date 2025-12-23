@@ -83,11 +83,11 @@
     }
 
     *::-webkit-scrollbar-thumb {
-        @apply bg-violet-500 border-x border-stone-800 rounded-none;
+        @apply bg-sky-500 border-x border-stone-800 rounded-none;
     }
 
     body {
-        @apply font-geist font-normal leading-[150%] text-base bg-primary-bg text-primary-txt tracking-wider selection:bg-violet-700 selection:text-white;
+        @apply font-geist font-normal leading-[150%] text-base bg-primary-bg text-primary-txt tracking-wider selection:bg-sky-700 selection:text-white;
     }
 
     h1, h2, h3 {
@@ -111,7 +111,7 @@
     }
 
     a {
-        @apply hover:text-violet-400 active:text-violet-400 transition-all;
+        @apply hover:text-sky-400 active:text-sky-400 transition-all;
     }
 
     #login-logo {
@@ -133,7 +133,7 @@
 
 @layer components {
     .grad-links {
-        @apply shadow-md bg-linear-to-r from-violet-500/45 to-violet-500 text-white;
+        @apply shadow-md bg-linear-to-r from-sky-500/45 to-sky-500 text-white;
     }
 
     .main-components {
@@ -169,6 +169,6 @@
     .select-box-scroll::-webkit-scrollbar-thumb {
         padding-block: 40px;
         border: 1px solid var(--color-primary-bg);
-        background-color: var(--color-violet-500);
+        background-color: var(--color-sky-500);
     }
 }

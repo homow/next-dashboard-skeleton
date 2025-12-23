@@ -125,6 +125,16 @@ src/app/(auth)/
 
 Each folder represents a route segment.
 
+**Add Routes to the Sidebar**
+
+To display your pages in the sidebar navigation, update the menu configuration in:
+
+```
+src/components/layout/SideBar/components/SideBarMenu.tsx
+```
+
+Add or modify links to match the routes you created.
+
 ---
 
 ### 2️⃣ Layout system

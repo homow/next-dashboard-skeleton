@@ -53,9 +53,13 @@ export default function SideBarLinks({data}: Props) {
                     >
                         <NavLinkClient
                             url={link.url}
-                            className={"h-10.5 flex items-center pr-5.5 py-2 flex-row gap-3 w-full rounded-l-full hover:opacity-100"}
+                            className={
+                                "h-10.5 flex items-center pr-5.5 py-2 flex-row gap-3 w-full rounded-l-full hover:opacity-100"
+                            }
                             activeStyle={"grad-links"}
-                            unActiveStyle={"hover:bg-violet-300 hover:text-gray-900  active:bg-violet-300 active:text-gray-900"}
+                            unActiveStyle={
+                                "hover:bg-sky-300 hover:text-gray-900  active:bg-sky-300 active:text-gray-900"
+                            }
                         >
                             {/* icon */}
                             <Icon icon={link.icon}/>

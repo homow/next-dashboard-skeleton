@@ -1,6 +1,5 @@
 "use client";
 
-import Logo from "@/components/ui/Logo";
 import {cn} from "@/lib/ui-utils/ui-utils";
 import Icon from "@/components/icon/Icon";
 import useSidebarStore from "@/store/sidebarStore";
@@ -14,9 +13,16 @@ export default function SideBarHeader() {
 
     return (
         <div
-            className={"relative flex items-center justify-between h-16"}
+            className={
+                "relative flex items-center justify-between h-16"
+            }
         >
-            <Logo>
+            <div
+                className={"flex flex-row items-center gap-4 pr-6"}
+            >
+                <Icon
+                    icon={"logo"}
+                />
                 <span
                     className={cn(
                         "font-medium",
@@ -25,7 +31,7 @@ export default function SideBarHeader() {
                 >
                     پنل مدیریت
                 </span>
-            </Logo>
+            </div>
 
             <div
                 onClick={toggleCollapse}
@@ -36,7 +42,10 @@ export default function SideBarHeader() {
                     )
                 }
             >
-                <Icon icon={"chevronDoubleRight"} className={"size-5"}/>
+                <Icon
+                    className={"size-5"}
+                    icon={"chevronDoubleRight"}
+                />
             </div>
         </div>
     );
