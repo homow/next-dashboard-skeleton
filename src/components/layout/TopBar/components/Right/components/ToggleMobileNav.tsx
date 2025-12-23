@@ -20,7 +20,6 @@ export default function OpenMobileNavMenu() {
                 className={"cursor-pointer md:hidden"}
             >
                 <Icon
-                    className={"-scale-x-100"}
                     icon={"bars"}
                 />
             </span>
