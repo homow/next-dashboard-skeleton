@@ -22,12 +22,12 @@ export function getAlertModalBtnBg(alertType: AlertModalType): string {
 
 export function getAlertModalTitle(alertType: AlertModalType): string {
     const map = {
-        error: "خطا",
-        success: "موفقیت",
-        warning: "هشدار",
-        info: "اطلاع"
+        error: "error",
+        success: "success",
+        warning: "warning",
+        info: "info"
     };
-    return alertType ? map[alertType] : "پیام";
+    return alertType ? map[alertType] : "message";
 }
 
 export function getAlertModalBgBar(alertType: AlertModalType): string {

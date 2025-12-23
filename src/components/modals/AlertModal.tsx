@@ -150,7 +150,7 @@ function InnerAlertModal(
                                 btnBg
                             )}
                         >
-                            بستن
+                            close
                         </button>
                     </div>
 

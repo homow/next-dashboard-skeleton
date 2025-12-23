@@ -12,8 +12,8 @@ export default function RootLayout(
     return (
         <html
             data-scroll-behavior="smooth"
-            lang="fa"
-            dir="rtl"
+            lang="en"
+            dir="ltr"
             className={`${geist.variable}`}
             suppressHydrationWarning
         >
@@ -33,7 +33,7 @@ export default function RootLayout(
             <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png"/>
 
             {/* <=== title ===> */}
-            <title>پنل مدیریت | آشیانه</title>
+            <title>dashboard | Next Skeleton</title>
         </head>
         <body
             className={"antialiased flex flex-row min-h-screen"}

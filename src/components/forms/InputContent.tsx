@@ -31,7 +31,7 @@ export default function InputContent(
             </div>
             {hasError && (
                 <ErrorMessageInputs
-                    msg={typeof hasError === "string" ? hasError : "ارور موجوده"}
+                    msg={typeof hasError === "string" ? hasError : "has error"}
                 />
             )}
         </div>

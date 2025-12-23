@@ -32,7 +32,7 @@ export default function NotFound() {
             <p
                 className="text-lg text-gray-700 dark:text-gray-300"
             >
-                صفحه‌ای که دنبالشی وجود نداره.
+                This is Page Not Found!
             </p>
 
             <div
@@ -44,7 +44,7 @@ export default function NotFound() {
                     onClick={goHome}
                     className="px-6 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-lg transition-colors"
                 >
-                    بازگشت به خانه
+                    Go to Home
                 </Button>
                 {hasBackPath && (
                     <Button
@@ -53,7 +53,7 @@ export default function NotFound() {
                         onClick={goBack}
                         className="px-6 py-2 bg-violet-500 hover:bg-violet-600 text-white rounded-lg transition-colors"
                     >
-                        بازگشت به صفحه قبل
+                        Back
                     </Button>
                 )}
             </div>

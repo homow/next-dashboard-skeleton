@@ -18,7 +18,7 @@ export default function SideBarHeader() {
             }
         >
             <div
-                className={"flex flex-row items-center gap-4 pr-6"}
+                className={"flex flex-row items-center gap-4 pl-6"}
             >
                 <Icon
                     icon={"logo"}
@@ -29,7 +29,7 @@ export default function SideBarHeader() {
                         currentCollapsed ? "hidden-effect" : "show-effect"
                     )}
                 >
-                    پنل مدیریت
+                    admin panel
                 </span>
             </div>
 
@@ -37,8 +37,8 @@ export default function SideBarHeader() {
                 onClick={toggleCollapse}
                 className={
                     cn(
-                        "hidden md:flex items-center justify-center absolute -left-5.5 cursor-pointer -rotate-180 transition-all duration-500",
-                        currentCollapsed && "rotate-0"
+                        "hidden md:flex items-center justify-center absolute -right-5.5 cursor-pointer transition-all duration-500",
+                        currentCollapsed && "-rotate-180"
                     )
                 }
             >

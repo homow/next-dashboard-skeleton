@@ -32,11 +32,11 @@ function InnerConfirmModal(
         onConfirm,
         setIsOpen,
         z = "z-30",
-        title = "تأیید",
-        cancelText = "لغو",
+        title = "submit",
+        cancelText = "cancel",
         dangerMode = false,
-        confirmText = "تأیید",
-        message = "آیا مطمئن هستید؟",
+        confirmText = "submit",
+        message = "are you sure?",
     }: Props
 ) {
     const buttonRef = useRef<HTMLButtonElement>(null);
@@ -149,13 +149,13 @@ export default function ConfirmModal(
     {
         isOpen,
         message,
-        title = "تأیید",
+        title,
         onConfirm,
         onCancel,
-        confirmText = "تأیید",
-        cancelText = "لغو",
-        dangerMode = false,
-        z = "z-30",
+        confirmText,
+        cancelText,
+        dangerMode,
+        z,
         loading,
         setIsOpen
     }: Props

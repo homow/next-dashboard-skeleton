@@ -4,17 +4,17 @@ import SideBarLinks from "./SideBarLinks";
 export default function SideBarMenu() {
     const dataMenu: SideBarDataTypes[] = [
         {
-            title: "داشبورد",
+            title: "dashboard",
             dataLinks: [
-                {text: "داشبورد", url: "/", icon: "dashboard"},
-                {text: "ملک‌ها", url: "/properties", icon: "house"},
+                {text: "dashboard", url: "/", icon: "dashboard"},
+                {text: "properties", url: "/properties", icon: "house"},
             ]
         },
         {
-            title: "پنل و صفحات",
+            title: "pages",
             dataLinks: [
-                {text: "کاربران", url: "/user", icon: "user"},
-                {text: "نقش ها", url: "/rules", icon: "lock"},
+                {text: "users", url: "/user", icon: "user"},
+                {text: "rules", url: "/rules", icon: "lock"},
             ]
         }
     ];

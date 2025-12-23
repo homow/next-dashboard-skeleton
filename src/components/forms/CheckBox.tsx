@@ -19,7 +19,7 @@ export default function CheckBox(
         name,
         className,
         id = "checkbox",
-        label = "انتخاب کن",
+        label = "select",
         onChange,
         initValue,
     }: Props

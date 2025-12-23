@@ -14,8 +14,8 @@ export default function SideBar() {
             id="side-bar"
             className={
                 cn(
-                    "fixed overflow-hidden top-0 pl-4.5 transition-all text-sm max-md:mobile-nav md:w-custom md:text-base",
-                    isOpenNav ? "max-md:right-0" : "max-md:-right-58"
+                    "fixed overflow-hidden top-0 pr-4.5 transition-all text-sm max-md:mobile-nav md:w-custom md:text-base",
+                    isOpenNav ? "max-md:left-0" : "max-md:-left-58"
                 )
             }
         >

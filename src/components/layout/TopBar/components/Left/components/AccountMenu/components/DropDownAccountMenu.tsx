@@ -19,11 +19,11 @@ export default function DropDownAccountMenu(
         {
             icon: "user",
             url: "/account",
-            name: "اکانت"
+            name: "account"
         },
         {
             icon: "logout",
-            name: "خروج",
+            name: "logout",
             callback: openLogoutModal,
             ulClassName: "hover:bg-rose-600 active:bg-rose-600",
         },
@@ -35,7 +35,7 @@ export default function DropDownAccountMenu(
         >
             <div
                 className={
-                    cn("w-58 mt-2 absolute top-full left-0 z-20 bg-main-bg py-2 rounded-md shadow-2xl",
+                    cn("w-58 mt-2 absolute top-full right-0 z-20 bg-main-bg py-2 rounded-md shadow-2xl",
                         className
                     )
                 }

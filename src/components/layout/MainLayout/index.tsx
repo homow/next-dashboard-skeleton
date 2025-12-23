@@ -11,7 +11,7 @@ export default function MainLayout({children}: MainComponentProps) {
             {/* topBar and main content */}
             <section
                 className={
-                    "transition-all mr-custom flex-1 px-3 sm:px-6 flex flex-col"
+                    "transition-all ml-custom flex-1 px-3 sm:px-6 flex flex-col"
                 }
             >
                 {/* top bar | header */}

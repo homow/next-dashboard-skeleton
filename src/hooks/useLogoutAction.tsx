@@ -19,7 +19,7 @@ export default function useLogoutAction() {
     const {AlertModalComponent, changeAlertModalData} = useAlertModal({
         initAlertType: "success",
         initIsOpen: false,
-        initMessage: "خروج موفقیت آمیز بود."
+        initMessage: "logout success."
     });
 
     const {replace} = useRouter();
@@ -43,14 +43,14 @@ export default function useLogoutAction() {
             <AlertModalComponent/>
             <ConfirmModal
                 dangerMode
-                cancelText={"نه"}
-                confirmText={"بله"}
-                title={"خروج از حساب"}
+                cancelText={"no"}
+                confirmText={"yes"}
+                title={"logout"}
                 isOpen={openConfirmModal}
                 onConfirm={confirmHandler}
                 setIsOpen={setOpenConfirmModal}
                 message={
-                    "مطمئنی میخوای از حسابت خارج بشی؟"
+                    "are you sure to logout?"
                 }
                 onCancel={() => setOpenConfirmModal(false)}
             />

@@ -28,7 +28,7 @@ export default function FormButton(
             className={className}
             btnStyle={btnStyle || "fill"}
         >
-            {children || "تایید"}
+            {children || "submit"}
         </Button>
     );
 };

@@ -14,9 +14,9 @@ export async function login(
     const trimPassword: string = String(password)?.trim();
 
     const newErrors = {
-        email: trimmedEmail ? "" : "ایمیل رو وارد کن",
-        password: trimPassword === "" ? "پسورد رو وارد کن"
-            : trimPassword.length < 6 ? "پسورد بالای 6 رقمه"
+        email: trimmedEmail ? "" : "enter email",
+        password: trimPassword === "" ? "enter password"
+            : trimPassword.length < 6 ? "password must be at least 6 characters"
                 : "",
     }
 
@@ -36,7 +36,7 @@ export async function login(
     if (!emailRegex.test(trimmedEmail)) {
         return {
             success: false,
-            emailError: "فرمت ایمیل اشتباهه",
+            emailError: "email format is invalid",
             fields: {
                 email: prevState.fields.email,
                 password: prevState.fields.password,

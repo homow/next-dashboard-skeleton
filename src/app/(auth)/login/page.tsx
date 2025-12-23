@@ -51,7 +51,7 @@ export default function Login() {
         changeAlertModalData
     } = useAlertModal({
         initAlertType: "success",
-        initMessage: "ورود موفقیت آمیز بود",
+        initMessage: "logged in successfully",
     });
 
     // ref
@@ -60,7 +60,7 @@ export default function Login() {
     const router = useRouter();
 
     // set title
-    useSetClientTitle("صفحه لاگین");
+    useSetClientTitle("login");
 
     // focus
     useEffect(() => {
@@ -74,7 +74,7 @@ export default function Login() {
         setEmail(val);
 
         if (
-            errors.email.includes("فرمت")
+            errors.email.includes("format")
             && emailRegex.test(val.trim())
         ) {
             setErrors({
@@ -84,7 +84,7 @@ export default function Login() {
         }
 
         if (
-            errors.email.includes("وارد")
+            errors.email.includes("enter")
             && val.trim()
         ) {
             setErrors({
@@ -129,8 +129,8 @@ export default function Login() {
         const trimPassword: string = password?.trim();
 
         const newErrors = {
-            email: trimmedEmail ? "" : "ایمیل رو وارد کن",
-            password: trimPassword ? "" : "پسورد رو وارد کن",
+            email: trimmedEmail ? "" : "enter email",
+            password: trimPassword ? "" : "enter password",
         }
 
         if (newErrors.email || newErrors.password) {
@@ -139,7 +139,7 @@ export default function Login() {
         }
 
         if (!emailRegex.test(trimmedEmail)) {
-            setErrors({...newErrors, email: "فرمت ایمیل اشتباهه"});
+            setErrors({...newErrors, email: "email format is invalid"});
             return;
         }
 
@@ -183,12 +183,12 @@ export default function Login() {
                     <h2
                         className="text-2xl font-bold text-center"
                     >
-                        آشیانه
+                        dashboard
                     </h2>
                     <p
                         className="text-sm text-center text-secondary-txt"
                     >
-                        ورود به پنل مدیریت
+                        login to admin dashboard
                     </p>
 
                     <form
@@ -201,7 +201,7 @@ export default function Login() {
                             id={"email"}
                             as={"input"}
                             name={"email"}
-                            label={"ایمیل"}
+                            label={"email"}
                             inputType={"text"}
                             inputRef={inputRef}
                             autoComplete={"email"}
@@ -216,7 +216,7 @@ export default function Login() {
                             value={password}
                             as={"input"}
                             id="password"
-                            label={"پسورد"}
+                            label={"password"}
                             name={"password"}
                             placeholder={"******"}
                             parentClassName={"relative"}
@@ -236,7 +236,7 @@ export default function Login() {
                                 aria-label={showPassword ? "Hide Password" : "Show Password"}
                                 className="absolute right-2 top-1/2 text-sm text-gray-500 hover:text-violet-500 cursor-pointer"
                             >
-                                {showPassword ? "مخفی" : "نمایش"}
+                                {showPassword ? "hide" : "show"}
                             </button>
                         </Input>
 
@@ -244,7 +244,7 @@ export default function Login() {
                             <CheckBox
                                 id={"remember"}
                                 name={"remember"}
-                                label={"منو یادت باشه"}
+                                label={"remember me"}
                             />
                         </div>
 
@@ -252,7 +252,7 @@ export default function Login() {
                             disabled={state.success}
                             className={"w-full justify-center"}
                         >
-                            ورود
+                            login
                         </FormButton>
                     </form>
                 </div>
