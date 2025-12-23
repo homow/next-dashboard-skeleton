@@ -19,9 +19,15 @@ export default function AccountInfo(
             <AccountAvatar/>
 
             {/* account details */}
-            <div>
-                <p>user?.display_name</p>
-                <p className={"text-secondary-txt text-sm"}>user?.role</p>
+            <div
+                className={
+                    "*:max-w-30 *:whitespace-nowrap *:text-ellipsis *:overflow-hidden"
+                }
+            >
+                <p>
+                    John
+                </p>
+                <p className={"text-secondary-txt text-sm"}>admin</p>
             </div>
         </div>
     );
