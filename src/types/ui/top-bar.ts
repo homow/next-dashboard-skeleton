@@ -1,20 +1,33 @@
 import type {NoLimitArgsFn, UseToggleFn} from "./";
 
-export interface DropDownOptionsType {
+interface BaseDropDownOptionsType {
     icon: string;
-    url?: string;
     name: string;
-    callback?: NoLimitArgsFn;
+    ulClassName?: string;
 }
+
+interface LinkDropDownOptionsType extends BaseDropDownOptionsType {
+    url: string;
+    callback?: never;
+}
+
+interface ActionDropDownOptionsType extends BaseDropDownOptionsType {
+    url?: never;
+    callback: NoLimitArgsFn;
+}
+
+export type DropDownOptionsType = LinkDropDownOptionsType | ActionDropDownOptionsType;
 
 export interface DropDownProps {
     className?: string;
     open: boolean;
     setOpen: UseToggleFn;
+    ulClassName?: string;
 }
 
 export interface DropDownAccountOptionsProps {
     className?: string;
     setOpenMenu?: UseToggleFn;
     dataLink: DropDownOptionsType;
+    ulClassName?: string;
 }

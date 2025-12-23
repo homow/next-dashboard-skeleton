@@ -20,10 +20,14 @@ export default function SideBarMenu() {
     ];
 
     return (
-        <div className={"space-y-5 pb-2"}>
-            {dataMenu.length > 0 && dataMenu.map(d => (
-                <SideBarLinks key={d.title} data={d}/>
-            ))}
+        <div
+            className={"space-y-5 pb-2"}
+        >
+            {dataMenu.length > 0
+                && dataMenu.map(d => (
+                    <SideBarLinks key={d.title} data={d}/>
+                ))
+            }
         </div>
     );
 };

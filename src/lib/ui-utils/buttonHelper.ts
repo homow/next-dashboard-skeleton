@@ -9,17 +9,17 @@ export default function buttonStyle(
         disabled
     }: ButtonPropsStyle
 ): string {
-    const outlineStyle = "border border-violet-600 text-violet-600 focus-visible:border-violet-700 focus-visible:text-violet-900 disabled:text-neutral-400 disabled:border-neutral-200 dark:disabled:border-neutral-600 dark:disabled:text-neutral-500";
-    const segmentedStyle = "hover:border-violet-500 active:bg-violet-600 active:border-violet-600 active:text-white disabled:border-neutral-300 disabled:text-neutral-500";
+    const outlineStyle = "border border-sky-600 text-sky-600 focus-visible:border-sky-700 focus-visible:text-sky-900 disabled:text-neutral-400 disabled:border-neutral-200 dark:disabled:border-neutral-600 dark:disabled:text-neutral-500";
+    const segmentedStyle = "hover:border-sky-500 active:bg-sky-600 active:border-sky-600 active:text-white disabled:border-neutral-300 disabled:text-neutral-500";
 
     const buttonStyle: string = {
-        fill: "bg-violet-600 text-white rounded-lg hover:bg-violet-700 active:bg-violet-900 focus-visible:bg-violet-700 disabled:bg-neutral-300 disabled:text-neutral-500 dark:disabled:bg-neutral-700 dark:disabled:text-neutral-300",
-        outline: `${outlineStyle} rounded-lg hover:border-violet-700 active:text-violet-900 active:border-violet-900`,
+        fill: "bg-sky-600 text-white rounded-lg hover:bg-sky-700 active:bg-sky-900 focus-visible:bg-sky-700 disabled:bg-neutral-300 disabled:text-neutral-500 dark:disabled:bg-neutral-700 dark:disabled:text-neutral-300",
+        outline: `${outlineStyle} rounded-lg hover:border-sky-700 active:text-sky-900 active:border-sky-900`,
         sharpL: `${outlineStyle} ${segmentedStyle} rounded-r-lg`,
         sharpR: `${outlineStyle} ${segmentedStyle} rounded-l-lg`,
         sharpBoth: `${outlineStyle} ${segmentedStyle}`,
         sharpNone: `${outlineStyle} ${segmentedStyle} rounded-lg`,
-        primary: "text-violet-600 hover:border-violet-700 active:text-violet-900 focus-visible:text-violet-700 disabled:text-neutral-400 dark:disabled:text-neutral-500"
+        primary: "text-sky-600 hover:border-sky-700 active:text-sky-900 focus-visible:text-sky-700 disabled:text-neutral-400 dark:disabled:text-neutral-500"
     }[btnStyle];
 
     return cn(

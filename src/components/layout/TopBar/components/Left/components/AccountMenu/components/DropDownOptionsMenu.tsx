@@ -6,11 +6,13 @@ import type {
 
 import Link from "next/link";
 import Icon from "@/components/icon/Icon";
+import {cn} from "@/lib/ui-utils";
 
 export default function DropDownAccountOptions(
     {
         dataLink,
-        setOpenMenu
+        setOpenMenu,
+        ulClassName,
     }: DropDownAccountOptionsProps
 ) {
     function onClickHandler(
@@ -31,7 +33,10 @@ export default function DropDownAccountOptions(
         <li
             key={dataLink.name}
             className={
-                "w-full py-0.5 *:py-1.5 *:hover:opacity-100 hover:text-white hover:bg-violet-500 active:bg-violet-500 active:text-white *:active:text-white *:hover:text-white *:transition-all *:duration-300 *:rounded-md"
+                cn(
+                    "w-full py-0.5 *:py-1.5 *:hover:opacity-100 hover:text-white hover:bg-sky-500 active:bg-sky-500 active:text-white *:active:text-white *:hover:text-white *:transition-all *:duration-300 *:rounded-md",
+                    ulClassName
+                )
             }
         >
             {dataLink.url ? (
