@@ -1,8 +1,8 @@
 import CustomThemeProvider from "@/components/ui/CustomThemeProvider";
+import SvgDefs from "@/components/icon/SvgDefs";
 import {MainComponentProps} from "@/types/ui";
 import {geist} from "@/lib/fonts";
 import "./globals.css";
-import SvgDefs from "@/components/icon/SvgDefs";
 
 export default function RootLayout(
     {
