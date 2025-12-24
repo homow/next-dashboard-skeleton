@@ -9,6 +9,6 @@ export default function Home() {
     );
 };
 
-export const metadata: Metadata = {
-    title: "پنل مدیریت | آشیانه"
-};
+export const metadata:Metadata = {
+    title: `داشبورد ${process.env.NEXT_PUBLIC_BASE_TITLE}`,
+}

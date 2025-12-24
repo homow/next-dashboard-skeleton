@@ -44,7 +44,7 @@ Responsive sidebar for both mobile and desktop, plus built-in **Dark/Light mode*
 
 ### 🔗 Preview
 
-> 🚀 **Live Demo:** [**Dashboard Skeleton (GitHub Pages)**](https://homow.github.io/next-dashboard-skeleton)  
+> 🚀 **Live Demo:** [**Dashboard Skeleton (GitHub Pages)**](https://next-dashboard-skeleton-production.up.railway.app/)  
 > Explore the live preview of the dashboard structure, including responsive menu and dark/light themes.
 
 ---

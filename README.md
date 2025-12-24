@@ -45,7 +45,7 @@
 
 ### 🔗 پیش‌نمایش
 
-> 🚀 **دموی زنده:** [**Next Dashboard Skeleton**](https://homow.github.io/next-dashboard-skeleton)
+> 🚀 **دموی زنده:** [**Next Dashboard Skeleton**](https://next-dashboard-skeleton-production.up.railway.app/)
 > مشاهده ساختار داشبورد، سایدبار واکنش‌گرا و تم تاریک / روشن.
 
 ---
@@ -54,7 +54,7 @@
 
 ```bash
 # کلون پروژه
-git clone https://github.com/homow/next-dashboard-skeleton.git
+git clone https://github.com/homow/next-dashboard-skeleton/tree/rtl
 
 # ورود به پوشه پروژه
 cd next-dashboard-skeleton
